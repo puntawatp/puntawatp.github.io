@@ -1,89 +1,228 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'DM Sans', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+/*──────────────────────────────────────────────────────────────────────────────
+  1) Global font + page background
+──────────────────────────────────────────────────────────────────────────────*/
+.about-body {
+	font-family: "DM Sans", sans-serif;
 }
 
-.container {
-  display: flex;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+/*──────────────────────────────────────────────────────────────────────────────
+  2) Shared “card” style (About, Publications, Contact…)
+──────────────────────────────────────────────────────────────────────────────*/
+.about-card,
+.pub-card,
+.contact-card {
+	background-color: #ffffff;
+	border-radius: 0.75rem; /* ≈12px */
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* subtle shadow */
+	padding: 1.5rem; /* ≈24px */
+	width: 100%;
 }
 
-.left-column {
-  flex: 0 0 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*──────────────────────────────────────────────────────────────────────────────
+  3) About‐section specifics
+──────────────────────────────────────────────────────────────────────────────*/
+.about-container {
+	margin-top: 3rem; /* replaces Bootstrap’s mt-5 */
 }
 
-.circle-wrapper {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #eee;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.about-left {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start; /* top-align the image */
+	margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+	.about-left {
+		margin-bottom: 0;
+	}
 }
 
-.right-column {
-  flex: 0 0 70%;
-  padding-left: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.about-img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+	transition: max-width 0.3s ease;
+}
+@media (min-width: 768px) {
+	.about-img {
+		max-width: 200px;
+	}
+}
+@media (min-width: 992px) {
+	.about-img {
+		max-width: 250px;
+	}
 }
 
-.right-column h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+.about-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.right-column p {
-  font-size: 1.1em;
-  line-height: 1.6;
+.about-heading {
+	font-size: 1.75rem; /* ~ Bootstrap’s .h3 */
+	margin-bottom: 1rem; /* ~ mb-3 */
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.about-heading {
+		text-align: left;
+	}
 }
 
-  .circle-wrapper {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-  }
+.about-text {
+	text-align: justify;
+	text-justify: inter-word;
+	text-align-last: center; /* last line centered on mobile */
+	margin: 0;
+}
+@media (min-width: 768px) {
+	.about-text {
+		text-align: left;
+		text-align-last: left;
+	}
+}
 
-  .circle-crop {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 90% 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease;
-  }
+/*──────────────────────────────────────────────────────────────────────────────
+  4) Publications‐section specifics (if you’re still using it)
+──────────────────────────────────────────────────────────────────────────────*/
+.pub-heading {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.pub-heading {
+		text-align: left;
+	}
+}
 
-  /* Primary image is visible by default */
-  .primary {
-    opacity: 1;
-  }
+.publication-item {
+	background-color: #f8f9fa; /* Bootstrap’s bg-light */
+	border: 1px solid #dee2e6;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
 
-  /* Secondary image is hidden by default */
-  .secondary {
-    opacity: 0;
-  }
+.pub-title {
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
 
-  /* On hover, fade out the primary image and show the secondary image */
-  .circle-wrapper:hover .primary {
-    opacity: 0;
-  }
+.pub-details {
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.4;
+	color: #555;
+}
 
-  .circle-wrapper:hover .secondary {
-    opacity: 1;
-  }
+/*──────────────────────────────────────────────────────────────────────────────
+  5) “Combined Projects” card and its items
+──────────────────────────────────────────────────────────────────────────────*/
+/* 5.1) The outer card that wraps all projects: white bg, rounded, shadow, padding */
+.project-card {
+	background-color: #ffffff;
+	border-radius: 0.75rem;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+	padding: 1.5rem;
+	width: 100%;
+}
+
+/* 5.2) Each project inside that card: two‐column layout plus a divider */
+.project-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 1.5rem; /* spacing at the bottom of each item */
+	border-bottom: 1px solid #dee2e6; /* thin divider */
+	margin-bottom: 1.5rem; /* space before the next project item */
+}
+
+/* Remove bottom divider and extra space on the last project */
+.project-item:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* 5.3) Left half of each project: center media, stack on mobile */
+.project-media {
+	text-align: center;
+	margin-bottom: 1rem; /* space under image on mobile */
+}
+@media (min-width: 768px) {
+	.project-media {
+		margin-bottom: 0; /* no bottom margin on md+ so it sits flush */
+	}
+}
+
+/* 5.4) Make images/videos fluid and optionally cap their width */
+.project-img,
+.project-video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 0.5rem; /* slight rounding */
+	/* Uncomment if you want an animated transition at breakpoints: */
+	/* transition: max-width 0.3s ease; */
+}
+@media (min-width: 768px) {
+	.project-img,
+	.project-video {
+		max-width: 300px; /* caps the media at 300px on ≥768px */
+	}
+}
+
+/* 5.5) Right half of each project: vertically center its text */
+.project-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* 5.6) Project title: size + responsive alignment */
+.project-title {
+	font-size: 1.5rem;
+	margin-bottom: 0.75rem;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.project-title {
+		text-align: left;
+	}
+}
+
+/* 5.7) Project description: justified with last line centered on mobile */
+.project-description {
+	text-align: justify;
+	text-justify: inter-word;
+	text-align-last: center;
+	margin: 0;
+	line-height: 1.5;
+	color: #333;
+}
+@media (min-width: 768px) {
+	.project-description {
+		text-align: left;
+		text-align-last: left;
+	}
+}
+
+/*──────────────────────────────────────────────────────────────────────────────
+  6) Contact‐section specifics (if you’re using it)
+──────────────────────────────────────────────────────────────────────────────*/
+.contact-heading {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.contact-heading {
+		text-align: left;
+	}
+}
