@@ -251,6 +251,18 @@
   }
 }
 
+/* 5.8) Project title: size + responsive alignment */
+.project-author {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .project-author {
+    text-align: left;
+  }
+}
+
 /*──────────────────────────────────────────────────────────────────────────────
   6) Contact‐section specifics (if you’re using it)
 ──────────────────────────────────────────────────────────────────────────────*/
