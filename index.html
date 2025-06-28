@@ -1,277 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Puntawat Ponglertnapakorn</title>
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Puntawat Ponglertnapakorn</title>
 
-    <!-- Bootstrap CSS (v5.3) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <!-- Bootstrap CSS (v5.3) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <body class="bg-light about-body">
-    <div class="container about-container">
-      <!-- ───────────────────────────────────────────────────────────────────────────
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-light about-body">
+  <div class="container about-container">
+    <!-- ───────────────────────────────────────────────────────────────────────────
       1) About Section
       ─────────────────────────────────────────────────────────────────────────── -->
-      <div class="row about-card">
-        <div class="col-12 col-md-4 about-left">
-          <img src="./fig/me_iccv.png" class="about-img" alt="Primary Image" />
-          <!-- <img src="./fig/me.png" class="about-img" alt="Primary Image" /> -->
-        </div>
-        <div class="col-12 col-md-8 about-right">
-          <h1 class="about-heading">Puntawat Ponglertnapakorn</h1>
-          <p class="about-text">
-            I am currently a Ph.D. student from Vision and Learning Lab (VLL)
-            the School of Information Science and Technology (IST, VISTEC) in
-            Thailand under the super vision of Prof.
-            <a href="www.supasorn.com">Supasorn Suwajanakorn</a>. My research
-            interests are the intersection of computer vision and sports
-            especially in football where reconstruct back the past. catching
-            breath moments and can let viewer view in immersive way. Also, I am
-            interested in generative models - Computer vision and sport to -
-            Generative model
-          </p>
-          <div class="logo-links">
-            <a
-              href="https://scholar.google.com/citations?hl=th&user=yXzkTogAAAAJ"
-              target="_blank"
-            >
-              <img
-                src="./logo/Google_Scholar_logo.svg"
-                alt="Google Scholar"
-                class="logo-icon"
-              />
-              Google Scholar
-            </a>
-            <a href="https://github.com/XezXey" target="_blank">
-              <img src="./logo/github.svg" alt="GitHub" class="logo-icon" />
-              GitHub
-            </a>
-            <a href="https://github.com/XezXey" target="_blank">
-              <img src="./logo/github.svg" alt="GitHub" class="logo-icon" />
-              CV (Last update: 6/2025)
-            </a>
-            <a href="mailto:puntawat1412@gmail.com" target="_blank">
-              <img src="./logo/email.svg" alt="Email" class="logo-icon" />
-              E-mail
-            </a>
-          </div>
-        </div>
+    <div class="row about-card">
+      <div class="col-12 col-md-4 about-left">
+        <img src="./fig/me_iccv.png" class="about-img" alt="Primary Image" />
+        <!-- <img src="./fig/me.png" class="about-img" alt="Primary Image" /> -->
       </div>
-
-      <!-- ───────────────────────────────────────────────────────────────────────────
-      2) Combined Projects Card
-      ─────────────────────────────────────────────────────────────────────────── -->
-      <h2 class="section-heading mt-5 mb-4">Selected Publications</h2>
-      <div class="row project-card">
-        <div class="col-12">
-          <!-- Project Item #1 -->
-          <div class="row project-item">
-            <div class="col-12 col-md-4 project-media">
-              <a href="https://where-is-the-ball.github.io/">
-                <video
-                  class="project-video"
-                  muted
-                  autoplay
-                  loop
-                  playsinline
-                  href="https://where-is-the-ball.github.io/"
-                >
-                  <source
-                    src="./vid/tennis_web_teaser_small.mp4"
-                    type="video/mp4"
-                  />
-                  <!-- Fallback text if video isn’t supported -->
-                  Your browser does not support the video tag.
-                </video>
-              </a>
-            </div>
-            <div class="col-12 col-md-8 project-info">
-              <h3 class="project-title">
-                Where Is The Ball: 3D Ball Trajectory Estimation From 2D
-                Monocular Tracking
-              </h3>
-              <p class="project-author">
-                <b>Puntawat Ponglertnapakorn</b>, Supasorn Suwajanakorn
-              </p>
-              <p class="project-description">11th CVsports @ CVPR 2025</p>
-              <p class="project-link">
-                <a href="https://where-is-the-ball.github.io/">Project Page</a>
-                ·
-                <a href="https://arxiv.org/abs/2506.05763">Paper</a>
-              </p>
-              <p class="project-description">
-                "An approach for 3D ball trajectory estimation from a 2D
-                tracking sequence that generalizes to real-world trajectories,
-                despite being trained solely on simulation."
-              </p>
-            </div>
-          </div>
-
-          <!-- Project Item #2 -->
-          <div class="row project-item">
-            <div class="col-12 col-md-4 project-media">
-              <a href="https://diffusion-face-relighting-pp.github.io/">
-                <img
-                  src="./fig/difareli++_static.png"
-                  class="img-fluid project-img"
-                  alt="DiFaReli++"
-                />
-              </a>
-            </div>
-            <div class="col-12 col-md-8 project-info">
-              <h3 class="project-title">
-                DiFaReli++: Diffusion Face Relighting With Consistent Cast
-                Shadows
-              </h3>
-              <p class="project-author">
-                <b>Puntawat Ponglertnapakorn</b>, Nontawat Tritrong, Supasorn
-                Suwajanakorn
-              </p>
-              <p class="project-description">Arxiv Preprint 2025</p>
-              <p class="project-link">
-                <a href="https://diffusion-face-relighting-pp.github.io/"
-                  >Project Page</a
-                >
-                ·
-                <a href="https://arxiv.org/abs/2304.09479">Paper</a>
-              </p>
-              <p class="project-description">
-                "An extension to DiFaReli that improves cast shadows by enabling
-                removal or alteration of hard cast shadows with temporal
-                consistency, and achieves faster relighting in a single network
-                pass."
-              </p>
-            </div>
-          </div>
-
-          <!-- Project Item #3 (example) -->
-          <div class="row project-item">
-            <div class="col-12 col-md-4 project-media">
-              <a href="https://diffusion-face-relighting.github.io/">
-                <img
-                  src="./fig/difareli_static.png"
-                  class="img-fluid project-img"
-                  alt="DiFaReli"
-                />
-              </a>
-            </div>
-            <div class="col-12 col-md-8 project-info">
-              <h3 class="project-title">DiFaReli: Diffusion Face Relighting</h3>
-              <p class="project-author">
-                <b>Puntawat Ponglertnapakorn</b> Nontawat Tritrong Supasorn
-                Suwajanakorn
-              </p>
-              <p class="project-description">ICCV 2023</p>
-              <p class="project-link">
-                <a href="https://diffusion-face-relighting.github.io/"
-                  >Project Page</a
-                >
-                ·
-                <a href="https://arxiv.org/abs/2304.09479v3">Paper</a>
-              </p>
-              <p class="project-description">
-                "A novel approach to single-view face relighting in the wild
-                leveraging a conditional diffusion implicit model (DDIM) without
-                any need for light stage data, multi-view images, or lighting
-                ground truth."
-              </p>
-            </div>
-          </div>
-
-          <!-- Add more <div class="row project-item">…</div> blocks as needed -->
-        </div>
-      </div>
-
-      <h2 class="section-heading mt-5 mb-4">Other Publications</h2>
-      <div class="row project-card">
-        <div class="col-12">
-          <!-- Project Item #1 -->
-          <div class="row project-item">
-            <div class="col-12 col-md-4 project-media">
-              <a href="https://github.com/IoBT-VISTEC/MUSEC">
-                <img
-                  src="./fig/musec.jpg"
-                  class="img-fluid project-img"
-                  alt="MUSEC"
-                />
-              </a>
-            </div>
-            <div class="col-12 col-md-8 project-info">
-              <h3 class="project-title">
-                Revealing Preference in Popular music Through Familiarity and
-                Brain Response
-              </h3>
-              <p class="project-author">
-                Soravitt Sangnark, Phairot Autthasan,
-                <b>Puntawat Ponglertnapakorn</b>, Phudit Chalekarn, Thapanun
-                Sudhawiyangkul, Manatsanan Trakulruangroj, Sarita Songsermsawad,
-                Rawin Assabumrungrat, Supalak Amplod, Kajornvut Ounjai,
-                Theerawit Wilaiprasitporn
-              </p>
-              <p class="project-description">IEEE Sensor Journal 2021</p>
-              <p class="project-link">
-                <a href="https://github.com/IoBT-VISTEC/MUSEC">Dataset</a>
-                ·
-                <a href="https://arxiv.org/abs/2102.00159">Paper</a>
-              </p>
-              <p class="project-description">
-                "A music preference study, factorized by familiarity score and
-                brain responses (EEG) while listening to music with and without
-                lyrics."
-              </p>
-            </div>
-          </div>
-          <!-- Project Item #2 -->
-          <div class="row project-item">
-            <div class="col-12 col-md-4 project-media">
-              <a href="https://ieeexplore.ieee.org/document/9027912">
-                <img
-                  src="./fig/sleep.jpg"
-                  class="img-fluid project-img"
-                  alt="SLEEP"
-                />
-              </a>
-            </div>
-            <div class="col-12 col-md-8 project-info">
-              <h3 class="project-title">
-                Improving Heart Rate Estimation on Consumer Grade Wrist-Worn
-                Device Using Post-Calibration Approach
-              </h3>
-              <p class="project-author">
-                Tanut Choksatchawathi, <b>Puntawat Ponglertnapakorn</b>, Apiwat
-                Ditthapron, Pitshaporn Leelaarporn, Thayakorn Wisutthisen,
-                Maytus Piriyajitakonkij, Theerawit Wilaiprasitporn
-              </p>
-              <p class="project-description">IEEE Sensor Journal 2020</p>
-              <p class="project-link">
-                <a href="https://ieeexplore.ieee.org/document/9027912">Paper</a>
-              </p>
-              <p class="project-description">
-                "A method to improve heart rate estimation from various
-                consumer-grade wrist-worn devices toward medical-grade
-                accuracy."
-              </p>
-            </div>
-          </div>
+      <div class="col-12 col-md-8 about-right">
+        <h1 class="about-heading">Puntawat Ponglertnapakorn</h1>
+        <p class="about-text">
+          I am currently a Ph.D. candidate from Vision and Learning Lab (VLL)
+          the School of Information Science and Technology (IST, VISTEC) in
+          Thailand under the super vision of Prof.
+          <a href="www.supasorn.com">Supasorn Suwajanakorn</a>. <br>My research
+          interests are the intersection of computer vision and sports
+          especially in football where reconstruct back the past. catching
+          breath moments and can let viewer view in immersive way. Also, I am
+          interested in generative models - Computer vision and sport to -
+          Generative model
+        </p>
+        <div class="logo-links">
+          <a href="https://scholar.google.com/citations?hl=th&user=yXzkTogAAAAJ" target="_blank">
+            <img src="./logo/Google_Scholar_logo.svg" alt="Google Scholar" class="logo-icon" />
+            Google Scholar
+          </a>
+          /
+          <a href="https://github.com/XezXey" target="_blank">
+            <img src="./logo/github.svg" alt="GitHub" class="logo-icon" />
+            GitHub
+          </a>
+          /
+          <a href="./static/Puntawat_CV.pdf" target="_blank">
+            <svg style="width:20px;height:auto;margin-right:8px" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z">
+              </path>
+            </svg>
+            CV (Last update: 6/2025)
+          </a>
+          /
+          <a href="mailto:puntawat1412@gmail.com" target="_blank">
+            <img src="./logo/email.svg" alt="Email" class="logo-icon" />
+            E-mail
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- ───────────────────────────────────────────────────────────────────────────
+      2) Combined Projects Card
+      ─────────────────────────────────────────────────────────────────────────── -->
+    <h2 class="section-heading mt-5 mb-4">Selected Publications</h2>
+    <div class="row project-card">
+      <div class="col-12">
+        <!-- Project Item #1 -->
+        <div class="row project-item">
+          <div class="col-12 col-md-4 project-media">
+            <a href="https://where-is-the-ball.github.io/">
+              <video class="project-video" muted autoplay loop playsinline href="https://where-is-the-ball.github.io/">
+                <source src="./vid/tennis_web_teaser_small.mp4" type="video/mp4" />
+                <!-- Fallback text if video isn’t supported -->
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+          <div class="col-12 col-md-8 project-info">
+            <h3 class="project-title">
+              Where Is The Ball: 3D Ball Trajectory Estimation From 2D
+              Monocular Tracking
+            </h3>
+            <p class="project-description">
+              "An approach for 3D ball trajectory estimation from a 2D
+              tracking sequence that generalizes to real-world trajectories,
+              despite being trained solely on simulation."
+            </p>
+            <p class="project-author">
+              <b>Puntawat Ponglertnapakorn</b>, Supasorn Suwajanakorn
+            </p>
+            <p class="project-author">
+              <i>I sincerely thank Dr. Konstantinos Rematas for his valuable guidance and support.</i>
+            </p>
+            <p class="project-venue">11th CVsports @ CVPR 2025</p>
+            <p class="project-link">
+              <a href="https://where-is-the-ball.github.io/">Project Page</a>
+              ·
+              <a href="https://arxiv.org/abs/2506.05763">Paper</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Project Item #2 -->
+        <div class="row project-item">
+          <div class="col-12 col-md-4 project-media">
+            <a href="https://diffusion-face-relighting-pp.github.io/">
+              <!-- <img src="./fig/difareli++_static.png" class="img-fluid project-img" alt="DiFaReli++" /> -->
+              <!-- <img src="./fig/difareli++_static.gif" class="img-fluid project-img" alt="DiFaReli++" /> -->
+              <video class="project-video" muted autoplay loop playsinline
+                href="https://diffusion-face-relighting-pp.github.io/">
+                <source src="./vid/difareli++_vid.mp4" type="video/mp4" />
+                <!-- <source src="./vid/difareli++_vid_tmp.mp4" type="video/mp4" /> -->
+                <!-- Fallback text if video isn’t supported -->
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+          <div class="col-12 col-md-8 project-info">
+            <h3 class="project-title">
+              DiFaReli++: Diffusion Face Relighting With Consistent Cast
+              Shadows
+            </h3>
+            <p class="project-description">
+              "An extension to DiFaReli that improves cast shadows by enabling
+              removal or alteration of hard cast shadows with temporal
+              consistency, and achieves faster relighting in a single network
+              pass."
+            </p>
+            <p class="project-author">
+              <b>Puntawat Ponglertnapakorn</b>, Nontawat Tritrong, Supasorn
+              Suwajanakorn
+            </p>
+            <p class="project-venue">Arxiv Preprint 2025</p>
+            <p class="project-link">
+              <a href="https://diffusion-face-relighting-pp.github.io/">Project Page</a>
+              ·
+              <a href="https://arxiv.org/abs/2304.09479">Paper</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Project Item #3 (example) -->
+        <div class="row project-item">
+          <div class="col-12 col-md-4 project-media">
+            <a href="https://diffusion-face-relighting.github.io/">
+              <img src="./fig/difareli_static.png" class="img-fluid project-img" alt="DiFaReli" />
+            </a>
+          </div>
+          <div class="col-12 col-md-8 project-info">
+            <h3 class="project-title">DiFaReli: Diffusion Face Relighting</h3>
+            <p class="project-description">
+              "A novel approach to single-view face relighting in the wild
+              leveraging a conditional diffusion implicit model (DDIM) without
+              any need for light stage data, multi-view images, or lighting
+              ground truth."
+            </p>
+            <p class="project-author">
+              <b>Puntawat Ponglertnapakorn</b> Nontawat Tritrong Supasorn
+              Suwajanakorn
+            </p>
+            <p class="project-venue">ICCV 2023</p>
+            <p class="project-link">
+              <a href="https://diffusion-face-relighting.github.io/">Project Page</a>
+              ·
+              <a href="https://arxiv.org/abs/2304.09479v3">Paper</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Add more <div class="row project-item">…</div> blocks as needed -->
+      </div>
+    </div>
+
+    <h2 class="section-heading mt-5 mb-4">Other Publications</h2>
+    <div class="row project-card">
+      <div class="col-12">
+        <!-- Project Item #1 -->
+        <div class="row project-item">
+          <div class="col-12 col-md-4 project-media">
+            <a href="https://github.com/IoBT-VISTEC/MUSEC">
+              <img src="./fig/musec.jpg" class="img-fluid project-img" alt="MUSEC" />
+            </a>
+          </div>
+          <div class="col-12 col-md-8 project-info">
+            <h3 class="project-title">
+              Revealing Preference in Popular music Through Familiarity and
+              Brain Response
+            </h3>
+            <p class="project-description">
+              "A music preference study, factorized by familiarity score and
+              brain responses (EEG) while listening to music with and without
+              lyrics."
+            </p>
+            <p class="project-author">
+              Soravitt Sangnark, Phairot Autthasan,
+              <b>Puntawat Ponglertnapakorn</b>, Phudit Chalekarn, Thapanun
+              Sudhawiyangkul, Manatsanan Trakulruangroj, Sarita Songsermsawad,
+              Rawin Assabumrungrat, Supalak Amplod, Kajornvut Ounjai,
+              Theerawit Wilaiprasitporn
+            </p>
+            <p class="project-venue">IEEE Sensor Journal 2021</p>
+            <p class="project-link">
+              <a href="https://github.com/IoBT-VISTEC/MUSEC">Dataset</a>
+              ·
+              <a href="https://arxiv.org/abs/2102.00159">Paper</a>
+            </p>
+          </div>
+        </div>
+        <!-- Project Item #2 -->
+        <div class="row project-item">
+          <div class="col-12 col-md-4 project-media">
+            <a href="https://ieeexplore.ieee.org/document/9027912">
+              <img src="./fig/sleep.jpg" class="img-fluid project-img" alt="SLEEP" />
+            </a>
+          </div>
+          <div class="col-12 col-md-8 project-info">
+            <h3 class="project-title">
+              Improving Heart Rate Estimation on Consumer Grade Wrist-Worn
+              Device Using Post-Calibration Approach
+            </h3>
+            <p class="project-description">
+              "A method to improve heart rate estimation from various
+              consumer-grade wrist-worn devices toward medical-grade
+              accuracy."
+            </p>
+            <p class="project-author">
+              Tanut Choksatchawathi, <b>Puntawat Ponglertnapakorn</b>, Apiwat
+              Ditthapron, Pitshaporn Leelaarporn, Thayakorn Wisutthisen,
+              Maytus Piriyajitakonkij, Theerawit Wilaiprasitporn
+            </p>
+            <p class="project-venue">IEEE Sensor Journal 2020</p>
+            <p class="project-link">
+              <a href="https://ieeexplore.ieee.org/document/9027912">Paper</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
