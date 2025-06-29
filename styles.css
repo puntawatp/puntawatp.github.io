@@ -3,6 +3,7 @@
 ──────────────────────────────────────────────────────────────────────────────*/
 .about-body {
 	font-family: "DM Sans", sans-serif;
+	justify-content: center;
 }
 
 /*──────────────────────────────────────────────────────────────────────────────
@@ -14,8 +15,9 @@
 	background-color: #ffffff;
 	border-radius: 0.75rem; /* ≈12px */
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* subtle shadow */
-	padding: 1.5rem; /* ≈24px */
+	padding: 0.7rem; /* ≈24px */
 	width: 100%;
+	margin: auto;
 }
 
 .logo-links {
@@ -43,8 +45,12 @@
 /*──────────────────────────────────────────────────────────────────────────────
   3) About‐section specifics
 ──────────────────────────────────────────────────────────────────────────────*/
-.about-container {
+.about-container,
+.selected-publications-container,
+.other-publications-container {
 	margin-top: 3rem; /* replaces Bootstrap’s mt-5 */
+	width: 100%;
+	max-width: 1100px;
 }
 
 .about-left {
@@ -53,7 +59,7 @@
 	align-items: flex-start; /* top-align the image */
 	margin-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.about-left {
 		margin-bottom: 0;
 	}
@@ -66,7 +72,7 @@
 	border-radius: 10%;
 	transition: max-width 0.3s ease;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.about-img {
 		max-width: 200px;
 	}
@@ -88,7 +94,7 @@
 	margin-bottom: 1rem; /* ~ mb-3 */
 	text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.about-heading {
 		text-align: left;
 	}
@@ -100,7 +106,7 @@
 	text-align-last: center; /* last line centered on mobile */
 	margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.about-text {
 		text-align: left;
 		text-align-last: left;
@@ -115,7 +121,7 @@
 	margin-bottom: 1rem;
 	text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.pub-heading {
 		text-align: left;
 	}
@@ -151,8 +157,9 @@
 	background-color: #ffffff;
 	border-radius: 0.75rem;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-	padding: 1.5rem;
+	padding: 0.7rem;
 	width: 100%;
+	margin: auto;
 }
 
 /* 5.2) Each project inside that card: two‐column layout plus a divider */
@@ -177,7 +184,7 @@
 	text-align: center;
 	margin-bottom: 1rem; /* space under image on mobile */
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-media {
 		margin-bottom: 0; /* no bottom margin on md+ so it sits flush */
 	}
@@ -194,10 +201,22 @@
 	/* Uncomment if you want an animated transition at breakpoints: */
 	/* transition: max-width 0.3s ease; */
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-img,
 	.project-video {
-		max-width: 300px; /* caps the media at 300px on ≥768px */
+		max-width: 300px; /* caps the media at 300px on ≥992px */
+	}
+}
+
+@media (max-width: 992px) {
+	.project-img,
+	.project-video {
+		/* never smaller than 200px, scale up to 90% of viewport, but never exceed 500px */
+		width: clamp(200px, 90vw, 400px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
 	}
 }
 
@@ -214,7 +233,7 @@
 	margin-bottom: 0.3rem;
 	text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-title {
 		text-align: left;
 	}
@@ -230,7 +249,7 @@
 	line-height: 1.5;
 	color: #333;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-description {
 		text-align: left;
 		text-align-last: left;
@@ -247,7 +266,7 @@
 	line-height: 1.5;
 	color: #333;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-venue {
 		text-align: left;
 		text-align-last: left;
@@ -263,7 +282,7 @@
 	line-height: 1.5;
 	color: #333;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-link {
 		text-align: left;
 		text-align-last: left;
@@ -276,7 +295,7 @@
 	margin-bottom: 0;
 	text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-author {
 		text-align: left;
 	}
@@ -290,7 +309,7 @@
 	margin-bottom: 1rem;
 	text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.contact-heading {
 		text-align: left;
 	}
